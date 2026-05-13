@@ -9,7 +9,7 @@ MY_LONG = -7.556758
 
 account_sid = os.environ.get("ACCOUNT_SID")
 auth_token = os.environ.get("AUTH_TOKEN")
-
+my_phone = os.environ.get("MY_PHONE_NUMBER")
 
 parameters={
     "lat":MY_LAT,
@@ -33,6 +33,6 @@ if test>0:
     message = client.messages.create(
         body="Bring an umbrella",
         from_="+15075981783",
-        to="+34742060443",
+        to=my_phone,
     )
     print(message.status)
