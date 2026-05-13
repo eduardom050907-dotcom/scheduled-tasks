@@ -24,7 +24,6 @@ weather_data=response.json()
 
 test=0
 weather_ids=[weather_data["list"][ind]["weather"][0]["id"]for ind in range (4)]
-weather_ids.append(600)
 for id in weather_ids:
     if id<700:
         test+=1
