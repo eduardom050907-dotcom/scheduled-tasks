@@ -18,7 +18,7 @@ parameters={
     "cnt":4,
 }
 
-response=requests.get(url=OWM_endpoint,params=parameters)
+response = requests.get(url=OWM_ENDPOINT, params=parameters)
 response.raise_for_status()
 weather_data=response.json()
 
